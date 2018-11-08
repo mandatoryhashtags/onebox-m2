@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-mysql -h 0.0.0.0 -u root -proot -P 3300 magento < ./m1_cleaning.sql
+mysql -h 0.0.0.0 -u root -proot -P 3300 nucleus < ./m1_cleaning.sql
