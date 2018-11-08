@@ -1,3 +1,5 @@
 /src/*
 /docker/services/mysql/data/*
+/docker/services/apache/*.crt
+/docker/services/apache/*.key
 
