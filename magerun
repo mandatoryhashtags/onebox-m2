@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker-compose exec --user nucleus apache n98-magerun.phar $@

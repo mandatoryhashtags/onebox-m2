@@ -1,0 +1,3 @@
+/src/*
+/docker/services/mysql/data/*
+

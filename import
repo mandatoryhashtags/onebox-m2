@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+if [ -z "$1" ]
+  then
+    echo "Please provide a Database to import"
+    exit 1
+fi
+gzcat -c $1 | mysql -h 0.0.0.0 -u root -proot -P 3300 magento

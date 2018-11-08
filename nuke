@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+echo "Nuking all data"
+
+echo "Clearing generated"
+docker-compose exec --user nucleus apache rm -rf generated/*
+
+echo "Clearing pub static"
+docker-compose exec --user nucleus apache rm -rf pub/static/*
+
+echo "Clearing var/generation"
+docker-compose exec --user nucleus apache rm -rf var/generation/*
+
+echo "Clearing var/view_preprocessed"
+docker-compose exec --user nucleus apache rm -rf var/view_preprocessed/*
+
+echo "Clearing var/di"
+docker-compose exec --user nucleus apache rm -rf var/di/*
+
+echo "Clearing var/cache"
+docker-compose exec --user nucleus apache rm -rf rm -rf var/cache/*
+

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+if [ -z "$1" ]
+  then
+    docker-compose exec --user nucleus apache grunt exec
+    docker-compose exec --user nucleus apache grunt less
+    docker-compose exec --user nucleus apache grunt deploy
+    docker-compose exec --user nucleus apache grunt watch
+else
+    docker-compose exec --user nucleus apache grunt exec:$@
+    docker-compose exec --user nucleus apache grunt less:$@
+    docker-compose exec --user nucleus apache grunt watch:$@
+fi

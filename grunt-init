@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+docker-compose exec --user nucleus apache npm i grunt
+docker-compose exec --user nucleus apache npm i
+./magento deploy:mode:set developer
